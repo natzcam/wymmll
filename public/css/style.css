@@ -126,7 +126,7 @@ body {
 }
 
 .info-row>.col>h4 {
-    text-shadow: 1px 2px #35424b;
+    text-shadow: 4px 4px 4px #35424b;
 }
 
 div#schedule .day {
