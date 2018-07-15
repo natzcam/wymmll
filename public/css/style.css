@@ -1,0 +1,273 @@
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #F8F5EC;
+    background-color: #9AB5C8;
+}
+
+.dusty-blue-dark {
+    color: #6F8897
+}
+
+.dusty-blue {
+    color: #97B1C4
+}
+
+.white {
+    color: #F8F5EC;
+}
+
+.green {
+    color: #5E7E60;
+}
+
+.dusty-blue-dark-b {
+    background-color: #6F8897
+}
+
+.dusty-blue-b {
+    background-color: #97B1C4
+}
+
+.white-b {
+    background-color: #F8F5EC;
+}
+
+.green-b {
+    background-color: #5E7E60;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.no-uppercase {
+    text-transform: none;
+}
+
+.container.fluid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container.fluid>.row {
+    margin: 0;
+}
+
+.container.fluid>.row>.col {
+    padding: 0;
+}
+
+#slideshow {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+    #slideshow {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.photo-container {
+    overflow: hidden;
+}
+
+.prenup-photo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.ajax-loader {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.info-container {
+    width: 100%;
+}
+
+.info-container>div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.info-row {
+    min-height: 100vh;
+    /* border-bottom: 1px solid rgb(115, 120, 124); */
+}
+
+.info-row .col {
+    padding: 0 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .info-row .col {
+        padding: 0 1.2rem;
+    }
+}
+
+.info-row>.col>h4 {
+    text-shadow: 1px 2px #35424b;
+}
+
+div#schedule .day {
+    font-weight: bold;
+}
+
+div#schedule .details {
+    margin-bottom: 10px;
+}
+
+div#schedule .details .dash {
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+
+div#schedule .times {
+    padding-top: 0.5rem;
+}
+
+div#schedule .times p {
+    margin: 0;
+    text-align: right;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+div#schedule .location h4,
+div#schedule .location p {
+    margin: 0;
+}
+
+div#schedule .location .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div#schedule .comments {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+div#schedule .map {
+    margin-bottom: 40px;
+}
+
+div#schedule .map img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #35424b;
+}
+
+a:not(.btn) {
+    text-decoration: underline !important;
+    color: #FEF9F3 !important;
+}
+
+div#rsvp {
+    margin-top: 40px;
+}
+
+div#rsvp .btn {
+    background-color: #5E7E60;
+}
+
+div#qaa p {
+    padding: 0;
+    margin: 0;
+}
+
+div#qaa .question {
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.25rem;
+}
+
+div#qaa .question b {
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+}
+
+div#qaa .answer {
+    margin-top: 0.75rem;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+div#qaa .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #35424b;
+}
+
+div#lolo {
+    min-height: 40px;
+}
+
+div#lolo i {
+    font-size: 1.40rem;
+    position: relative;
+    top: .38rem;
+}
+
+.menu-btn {
+    bottom: 5px;
+    right: 5px;
+}
+
+.menu-btn>.btn-floating {
+    width: 80px;
+    height: 80px;
+}
+
+.menu-btn>.btn-floating,
+.menu-btn.active>.btn-floating,
+.menu-btn.active>.btn-floating:hover {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .1) 4%, transparent 78%);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.menu-btn ul a.btn-floating {
+    background-color: #5E7E60;
+}
+
+.menu-btn ul a.btn-floating>img {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.menu-btn>a.btn-large>img {
+    height: 23px;
+    width: 30px;
+    margin-top: 27px;
+    color: white;
+}
