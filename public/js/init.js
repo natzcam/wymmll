@@ -142,7 +142,7 @@
 
     var template =
       '<div class="photo-container">' +
-      '<img class="prenup-photo" data-lazy="http://res.cloudinary.com/do5gftokk/image/upload/${crop},q_95,w_${width},h_${height},dpr_${dpr}/${id}-${o}.JPG" width="${width}" height="${height}">' +
+      '<img class="prenup-photo" data-lazy="https://res.cloudinary.com/do5gftokk/image/upload/${crop},q_95,w_${width},h_${height},dpr_${dpr}/${id}-${o}.JPG" width="${width}" height="${height}">' +
       '<img class="ajax-loader" src="images/loader.svg">' +
       '</div>'
 
@@ -153,7 +153,7 @@
       var values = Object.assign({
         width: iw,
         height: ih,
-        dpr: "2.0",
+        dpr: "1.0",
         lcrop: "c_lfill,g_faces",
         pcrop: "c_lfill,g_center",
         o: landscape ? 'l' : 'p'
@@ -163,6 +163,14 @@
         values.crop = values.lcrop;
       } else {
         values.crop = values.pcrop;
+      }
+
+      if (navigator.connection) {
+        if (navigator.connection.downlink > 1.0) {
+          values.dpr = "1.5";
+        } else if (navigator.connection.downlink > 2.0) {
+          values.dpr = "2.0";
+        }
       }
 
       $('#slideshow').append($.tmpl(template, values));
