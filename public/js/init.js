@@ -5,8 +5,8 @@
       hoverEnabled: false
     });
 
-    $(document).ready(function () {
-      $('.carousel').carousel();
+    $('#invite-pics').slick({
+      infinite: false
     });
 
     smoothScroll();
@@ -16,7 +16,7 @@
       slideshow();
     });
 
-    $( window ).resize( _.debounce( slideshow, 1000 ) );
+    $(window).resize(_.debounce(slideshow, 1000));
   });
 
   function smoothScroll() {
@@ -59,7 +59,7 @@
   }
 
   function slideshow() {
-    $(".slick-slider").slick('unslick');
+    $("#slideshow.slick-slider").slick('unslick');
     $('#slideshow').html('');
 
     var ih = Math.ceil($('#slideshow').height());

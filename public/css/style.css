@@ -176,7 +176,7 @@ div#schedule .comments {
 }
 
 div#schedule .map {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 div#schedule .map img {
@@ -276,4 +276,12 @@ div#lolo i {
     width: 30px;
     margin-top: 27px;
     color: white;
+}
+
+.slick-prev{
+    left: -20px;
+}
+
+.slick-next{
+    right: -20px;
 }
