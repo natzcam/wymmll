@@ -5,6 +5,10 @@
       hoverEnabled: false
     });
 
+    $(document).ready(function () {
+      $('.carousel').carousel();
+    });
+
     smoothScroll();
     countDown();
 
@@ -12,12 +16,7 @@
       slideshow();
     });
 
-    $(window).on('orientationchange', function (e) {
-      $(window).one('resize', function () {
-        slideshow();
-      });
-    });
-
+    $( window ).resize( _.debounce( slideshow, 1000 ) );
   });
 
   function smoothScroll() {

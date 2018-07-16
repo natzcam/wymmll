@@ -101,6 +101,12 @@ body {
     height: 200px;
 }
 
+@media only screen and (min-width: 991px) {
+    .names {
+        font-size: 3.20rem;
+    }
+}
+
 .info-container {
     width: 100%;
 }
